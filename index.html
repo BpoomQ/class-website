@@ -15,15 +15,51 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/css/mdb.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav>
-
+    <nav class="navbar navbar-expand-lg navbar-dark top-page scrolling-navbar fixed-top">
+        <div class="container">
+            <a class="navbar-brand" data-scroll href="#top-page"><img src="./images/konradL.png" alt="Logo Konrad"></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navigation" arial-expanded="false"
+                aria-label="Toggle navigation" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a data-scroll href="#about" class="nav-link">Informacion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll href="#objetives" class="nav-link">Objetivos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll href="#topics" class="nav-link">Temas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a data-scroll href="#teacher" class="nav-link">Profesor</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav nav-flex-icons">
+                    <li class="nav-item">
+                        <a target="_blank" href="https://www.facebook.com/U.KONRADLORENZ/" class="nav-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a target="_blank" href="https://www.twitter.com/ukonradlorenz" class="nav-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <!-- Header -->
-    <header>
+    <header id="top-page">
         <div class="carousel slide carousel-fade" data-ride="carousel" id="mainCarousel">
             <ol class="carousel-indicators">
                 <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
@@ -74,14 +110,16 @@
     <!-- JQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.2.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
+    <!--Smooth scroll-->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+        var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
 </body>
 
 </html>
