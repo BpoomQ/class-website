@@ -177,15 +177,15 @@
           </div>
             <ul class="nav nav-tabs" id="General" role="tablist">
               <li class="nav-item">
-                <a class="nav-link active" id="objetive-tab" data-toggle="tab" href="#objetive" role="tab" aria-controls="objetive"
+                <a data-scroll-ignore class="nav-link active" id="objetive-tab" data-toggle="tab" href="#objetive" role="tab" aria-controls="objetive"
                   aria-selected="true">Objetivo General</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="cT-tab" data-toggle="tab" href="#cT" role="tab" aria-controls="cT"
+                <a data-scroll-ignore class="nav-link" id="cT-tab" data-toggle="tab" href="#cT" role="tab" aria-controls="cT"
                   aria-selected="false">Competencias Transversales</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="cE-tab" data-toggle="tab" href="#cE" role="tab" aria-controls="cE"
+                <a data-scroll-ignore class="nav-link" id="cE-tab" data-toggle="tab" href="#cE" role="tab" aria-controls="cE"
                   aria-selected="false">Competencias Especificas del Curso</a>
               </li>
             </ul>
@@ -198,10 +198,10 @@
 
               <div class="tab-pane fade" id="cT" role="tabpanel" aria-labelledby="cT-tab">
                 <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action">
+                  <a data-scroll-ignore type="buttom" class="list-group-item list-group-item-action">
                     Análisis de trabajo(Trabajo en equipo, liderazgo, negociación y comunicación)
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action">
+                  <a data-scroll-ignore type="buttom" class="list-group-item list-group-item-action">
                     Preparación: Capacidad para identificar alternativas de solución innovadoras y creativas en diferentes situaciones problema.
                   </a>
                 </div>
@@ -209,16 +209,16 @@
 
               <div class="tab-pane fade" id="cE" role="tabpanel" aria-labelledby="cE-tab">
                 <div class="list-group">
-                  <a href="#" class="list-group-item list-group-item-action">
+                  <a data-scroll-ignore type="buttom" class="list-group-item list-group-item-action">
                     Conoce y utiliza herramientas para el desarrollo y la gestión de proyectos de desarrollo de software.
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action">
+                  <a data-scroll-ignore type="buttom" class="list-group-item list-group-item-action">
                     Propone y diseña software de calidad para dar solución a un problema o necesidad específica.
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action">
+                  <a data-scroll-ignores type="buttom" class="list-group-item list-group-item-action">
                     Conoce y aplica patrones de arquitectura para proponer soluciones adecuadas a problemas específicos.
                   </a>
-                  <a href="#" class="list-group-item list-group-item-action">
+                  <a data-scroll-ignore type="buttom" class="list-group-item list-group-item-action">
                     Aplica y fomenta buenas prácticas de programación para construir un ambiente de trabajo productivo.
                   </a>
 
@@ -357,7 +357,8 @@
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
         var scroll = new SmoothScroll('a[href*="#"]', {
-            offset: 100
+            offset: 100,
+            ignore: '[data-scroll-ignore]'
         });
     </script>
 </body>
