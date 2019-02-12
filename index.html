@@ -59,7 +59,7 @@
         </div>
     </nav>
     <!-- Header -->
-    <header id="top-page">
+    <header id="top-page" class="mb-5">
         <div class="carousel slide carousel-fade" data-ride="carousel" id="mainCarousel">
             <ol class="carousel-indicators">
                 <li data-target="#mainCarousel" data-slide-to="0" class="active"></li>
@@ -88,8 +88,45 @@
         </div>
     </header>
     <!-- About -->
-    <section>
-
+    <section id="about" class="my-5">
+        <div class="container text-center">
+            <p class="h1-responsive">Lenguajes de programación</p>
+            <hr class="bg-light">
+            <div class="row my-auto">
+                <div class="col-md-4">
+                    <p class="h2-responsive">JavaScript</p>
+                    <img src="./images/js.png" alt="Avatar" class="img-fluid">
+                    <hr class="bg-light">
+                    <p class="lead mt-3">
+                        JavaScript es un lenguaje de programación que se utiliza principalmente para crear páginas web
+                        dinámicas. Una página web dinámica es aquella que incorpora efectos como texto que aparece y de
+                        aviso al usuario.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="h2-responsive">Python</p>
+                    <img src="./images/py.png" alt="Avatar" class="img-fluid">
+                    <hr class="bg-light">
+                    <p class="lead mt-3">
+                        Python es un lenguaje de programación interpretado cuya filosofía hace hincapié en una sintaxis
+                        que favorezca un código legible. Se trata de un lenguaje de programación multiparadigma, ya que
+                        soporta orientación a objetos, programación imperativa y, en menor medida, programación
+                        funcional.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <p class="h2-responsive">PHP</p>
+                    <img src="./images/ph.png" alt="Avatar" class="img-fluid">
+                    <hr class="bg-light">
+                    <p class="lead mt-3">
+                        PHP (Hypertext Preprocessor) es un lenguaje de programación interpretado que se utiliza para la
+                        generación de páginas web de forma dinámica. Éste código se ejecuta al lado del servidor y se
+                        incrusta dentro del código HTML. Cabe destacar que es un lenguaje de código abierto, gratuito y
+                        multiplataforma.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Objectives -->
     <section>
@@ -100,8 +137,45 @@
 
     </section>
     <!-- Introduce the teacher -->
-    <section>
-
+    <section id="teacher" class="my-5">
+        <div class="container text-center">
+            <p class="h1-responsive">Profesora Encargada</p>
+            <hr class="bg-light">
+            <div class="row my-auto">
+                <div class="col">
+                    <p class="h2-responsive">Cindy Viviana Hernández Otálora</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 view">
+                    <img src="./images/profesora.png" alt="Avatar" class="img-fluid zoom">
+                </div>
+                <div class="col-md-6">
+                    <div class="my-4">
+                        <p class="h2-responsive my-3">Estudios</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">Master en MBIT</li>
+                            <li class="list-group-item">Master en Ingeniería del Software</li>
+                            <li class="list-group-item">Ingeniera de Sistemas y Computación</li>
+                            <li class="list-group-item">Tecnóloga Comercial y Financiera</li>
+                        </ul>
+                    </div>
+                    <div class="my-auto">
+                        <p class="h2-responsive my-3">Egresada</p>
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <img src="./images/universidad-de-los-andes.png" alt="logo de universidad de los andes"
+                                    class="img-fluid">
+                            </li>
+                            <li class="list-group-item">
+                                <img src="./images/universidad-pedagogica-y-tecnologica-de-colombia.png" alt="logo de universidad pedagogica de colombia"
+                                    class="img-fluid">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!-- Footer -->
     <footer>
@@ -118,7 +192,9 @@
     <!--Smooth scroll-->
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script>
-        var scroll = new SmoothScroll('a[href*="#"]');
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            offset: 100
+        });
     </script>
 </body>
 
